@@ -1,4 +1,33 @@
 /* CSS */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main {
+        padding: 1rem 3rem;
+    }  
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+    main .content .content-image {
+        order: -1;
+    }
+}
 body {
     font-family: "Quicksand";
     margin: 0;
@@ -141,4 +170,7 @@ main aside .social-media li a {
     font-size: 1.5rem;
     color: white;
     transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+    color: #89b0d9;
 }
